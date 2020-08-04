@@ -1,0 +1,200 @@
+{
+  "Buttonmore": {
+    "description": "Auto imported from components/Buttonmore.vue"
+  },
+  "LazyButtonmore": {
+    "description": "Auto imported from components/Buttonmore.vue"
+  },
+  "Lines": {
+    "description": "Auto imported from components/Lines.vue"
+  },
+  "LazyLines": {
+    "description": "Auto imported from components/Lines.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Spaceline": {
+    "description": "Auto imported from components/Spaceline.vue"
+  },
+  "LazySpaceline": {
+    "description": "Auto imported from components/Spaceline.vue"
+  },
+  "Authorcard": {
+    "description": "Auto imported from components/author-part/Authorcard.vue"
+  },
+  "LazyAuthorcard": {
+    "description": "Auto imported from components/author-part/Authorcard.vue"
+  },
+  "Authore": {
+    "description": "Auto imported from components/author-part/Authore.vue"
+  },
+  "LazyAuthore": {
+    "description": "Auto imported from components/author-part/Authore.vue"
+  },
+  "Card": {
+    "description": "Auto imported from components/card-part/Card.vue"
+  },
+  "LazyCard": {
+    "description": "Auto imported from components/card-part/Card.vue"
+  },
+  "Maincard": {
+    "description": "Auto imported from components/card-part/Maincard.vue"
+  },
+  "LazyMaincard": {
+    "description": "Auto imported from components/card-part/Maincard.vue"
+  },
+  "Banner": {
+    "description": "Auto imported from components/banner-part/Banner.vue"
+  },
+  "LazyBanner": {
+    "description": "Auto imported from components/banner-part/Banner.vue"
+  },
+  "Cardcontent": {
+    "description": "Auto imported from components/banner-part/Cardcontent.vue"
+  },
+  "LazyCardcontent": {
+    "description": "Auto imported from components/banner-part/Cardcontent.vue"
+  },
+  "Cardcontentresponsive": {
+    "description": "Auto imported from components/banner-part/Cardcontentresponsive.vue"
+  },
+  "LazyCardcontentresponsive": {
+    "description": "Auto imported from components/banner-part/Cardcontentresponsive.vue"
+  },
+  "Imagebanner": {
+    "description": "Auto imported from components/banner-part/Imagebanner.vue"
+  },
+  "LazyImagebanner": {
+    "description": "Auto imported from components/banner-part/Imagebanner.vue"
+  },
+  "Boxtxt": {
+    "description": "Auto imported from components/category-part/Boxtxt.vue"
+  },
+  "LazyBoxtxt": {
+    "description": "Auto imported from components/category-part/Boxtxt.vue"
+  },
+  "Categories": {
+    "description": "Auto imported from components/category-part/Categories.vue"
+  },
+  "LazyCategories": {
+    "description": "Auto imported from components/category-part/Categories.vue"
+  },
+  "Lifestyle": {
+    "description": "Auto imported from components/category-part/Lifestyle.vue"
+  },
+  "LazyLifestyle": {
+    "description": "Auto imported from components/category-part/Lifestyle.vue"
+  },
+  "Work": {
+    "description": "Auto imported from components/category-part/Work.vue"
+  },
+  "LazyWork": {
+    "description": "Auto imported from components/category-part/Work.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/navbar-part/Navbar.vue"
+  },
+  "LazyNavbar": {
+    "description": "Auto imported from components/navbar-part/Navbar.vue"
+  },
+  "Navbaritem": {
+    "description": "Auto imported from components/navbar-part/Navbaritem.vue"
+  },
+  "LazyNavbaritem": {
+    "description": "Auto imported from components/navbar-part/Navbaritem.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/footer-part/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/footer-part/Footer.vue"
+  },
+  "Footercard": {
+    "description": "Auto imported from components/footer-part/Footercard.vue"
+  },
+  "LazyFootercard": {
+    "description": "Auto imported from components/footer-part/Footercard.vue"
+  },
+  "Contact": {
+    "description": "Auto imported from components/page-contact/Contact.vue"
+  },
+  "LazyContact": {
+    "description": "Auto imported from components/page-contact/Contact.vue"
+  },
+  "Tag": {
+    "description": "Auto imported from components/tags-part/Tag.vue"
+  },
+  "LazyTag": {
+    "description": "Auto imported from components/tags-part/Tag.vue"
+  },
+  "Tagscardbox": {
+    "description": "Auto imported from components/tags-part/Tagscardbox.vue"
+  },
+  "LazyTagscardbox": {
+    "description": "Auto imported from components/tags-part/Tagscardbox.vue"
+  },
+  "Author": {
+    "description": "Auto imported from components/authors/main-part/Author.vue"
+  },
+  "LazyAuthor": {
+    "description": "Auto imported from components/authors/main-part/Author.vue"
+  },
+  "Details": {
+    "description": "Auto imported from components/authors/main-part/Details.vue"
+  },
+  "LazyDetails": {
+    "description": "Auto imported from components/authors/main-part/Details.vue"
+  },
+  "Imageframe": {
+    "description": "Auto imported from components/page-about/image-part/Imageframe.vue"
+  },
+  "LazyImageframe": {
+    "description": "Auto imported from components/page-about/image-part/Imageframe.vue"
+  },
+  "Img": {
+    "description": "Auto imported from components/page-about/image-part/Img.vue"
+  },
+  "LazyImg": {
+    "description": "Auto imported from components/page-about/image-part/Img.vue"
+  },
+  "Textframe": {
+    "description": "Auto imported from components/page-about/text-part/Textframe.vue"
+  },
+  "LazyTextframe": {
+    "description": "Auto imported from components/page-about/text-part/Textframe.vue"
+  },
+  "Txt": {
+    "description": "Auto imported from components/page-about/text-part/Txt.vue"
+  },
+  "LazyTxt": {
+    "description": "Auto imported from components/page-about/text-part/Txt.vue"
+  },
+  "Imgframe": {
+    "description": "Auto imported from components/page-cards/image-part/Imgframe.vue"
+  },
+  "LazyImgframe": {
+    "description": "Auto imported from components/page-cards/image-part/Imgframe.vue"
+  },
+  "Photo": {
+    "description": "Auto imported from components/page-cards/image-part/Photo.vue"
+  },
+  "LazyPhoto": {
+    "description": "Auto imported from components/page-cards/image-part/Photo.vue"
+  },
+  "Video": {
+    "description": "Auto imported from components/page-cards/video-part/Video.vue"
+  },
+  "LazyVideo": {
+    "description": "Auto imported from components/page-cards/video-part/Video.vue"
+  },
+  "Videoframe": {
+    "description": "Auto imported from components/page-cards/video-part/Videoframe.vue"
+  },
+  "LazyVideoframe": {
+    "description": "Auto imported from components/page-cards/video-part/Videoframe.vue"
+  }
+}

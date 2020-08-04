@@ -1,0 +1,52 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/arashazimdoust/Desktop/Archive/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_69870d98"
+  },
+  {
+    "path": "/authors",
+    "component": "/Users/arashazimdoust/Desktop/Archive/pages/authors.vue",
+    "chunkName": "pages/authors",
+    "children": [
+      {
+        "name": "authors",
+        "path": "",
+        "component": "/Users/arashazimdoust/Desktop/Archive/pages/authors/index.vue",
+        "chunkName": "pages/authors/index",
+        "_name": "_751e6ff2"
+      },
+      {
+        "name": "authors-id",
+        "path": ":id",
+        "component": "/Users/arashazimdoust/Desktop/Archive/pages/authors/_id.vue",
+        "chunkName": "pages/authors/_id",
+        "_name": "_590bc6da"
+      }
+    ],
+    "_name": "_199d68af"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/arashazimdoust/Desktop/Archive/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_1f005ef2"
+  },
+  {
+    "name": "cards-id",
+    "path": "/cards/:id?",
+    "component": "/Users/arashazimdoust/Desktop/Archive/pages/cards/_id.vue",
+    "chunkName": "pages/cards/_id",
+    "_name": "_5a5aca96"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/arashazimdoust/Desktop/Archive/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2a17580e"
+  }
+]
