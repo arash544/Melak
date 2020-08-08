@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Details
+    <Details 
       showimg="true"
       showicons="true"
       img="http://melaka.aspirethemes.com/content/images/size/w1500/2019/09/brooke-cagle-EnE-o3P-WOY-unsplash.jpg"
@@ -17,10 +17,11 @@ import Details from "./Details";
 
 export default {
   name: "Author",
+  props:['articles'],
   components: {
     Details,
     
-  },
+  }, 
 };
 </script>
 

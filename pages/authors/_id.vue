@@ -1,6 +1,6 @@
 <template>
   <section class="main-wrapper">
-    <Author />
+    <Author :articles="articles"/>
   </section>
 </template>
 
@@ -9,6 +9,19 @@ import Author from "@/components/authors/main-part/Author";
 export default {
   components: {
     Author,
+  }, 
+
+    asyncData(context) {
+   return fetch(`http://localhost:8888/portfolio/wp-json/wp/v2/posts?author=${context.route.params.id}&_embed`)
+      .then(res=>res.json())
+      .then(rs=>{
+        console.log(rs);
+        return{
+          articles:rs
+        }
+         
+      })
+      
   },
 };
 </script>
@@ -20,4 +33,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
 }
+// .content{
+//   padding: 0;
+// }
 </style>

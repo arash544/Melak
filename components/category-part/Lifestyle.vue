@@ -1,15 +1,21 @@
 <template>
-  <div class="wrap" >
+  <div class="wrap">
     <div class="title">
-      <a href="/">{{title}}</a>
+      <a>{{ title }}</a>
       <img :src="img" alt />
     </div>
     <Spaceline width="98" />
-    <Boxtxt v-for="lifestyle in lifestyles" :key="lifestyle.id"
-    :id="lifestyle.id"
+    <Boxtxt
+      v-for="lifestyle in lifestyles"
+      :key="lifestyle.id"
+      :id="lifestyle.id"
       :link="lifestyle.title.rendered"
       :date="lifestyle.date"
-      :img="lifestyle._embedded['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']"
+      :img="
+        lifestyle._embedded['wp:featuredmedia'][0]['media_details']['sizes'][
+          'full'
+        ]['source_url']
+      " 
     />
   </div>
 </template>
@@ -24,19 +30,19 @@ export default {
     Spaceline,
     Boxtxt,
   },
-      data(){
-    return{
-      lifestyles:[]
-    }
+  data() {
+    return {
+      lifestyles: [],
+    };
   },
-    created() {
-    fetch('http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=4&categories=17&_embed')
-      .then(res=>res.json())
-      .then(rs=>{
-         this.lifestyles=rs
-        //  console.log(rs)
-      })
-      
+  created() {
+    fetch(
+      "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=4&categories=17&_embed"
+    )
+      .then((res) => res.json())
+      .then((rs) => {
+        this.lifestyles = rs;
+      });
   },
 };
 </script>
@@ -98,5 +104,4 @@ export default {
 .change {
   height: 100%;
 }
-
 </style>

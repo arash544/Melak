@@ -1,8 +1,14 @@
 <template>
   <div class="main">
     <div class="wrapper">
-      <Authorcard v-for="author in authors" :key="author.id"
-        :img="author._embedded['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']"
+      <Authorcard
+        v-for="author in authors"
+        :key="author.id"
+        :img="
+          author._embedded['wp:featuredmedia'][0]['media_details']['sizes'][
+            'full'
+          ]['source_url']
+        "
         :link="author._embedded.author[0].name"
         :txt="author.content.rendered"
       />
@@ -17,26 +23,24 @@ export default {
   components: {
     Authorcard,
   },
-data(){
-  return{
-    authors:[]
-    }
+  data() {
+    return {
+      authors: [],
+    };
   },
-    created() {
-    fetch('http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=3&categories=1&_embed')
-      .then(res=>res.json())
-      .then(rs=>{
-         this.authors=rs
-        //  console.log(rs)
-      })
-      
+  created() {
+    fetch(
+      "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=3&categories=1&_embed"
+    )
+      .then((res) => res.json())
+      .then((rs) => {
+        this.authors = rs;
+      });
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
-
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +93,4 @@ data(){
     flex-direction: column;
   }
 }
-
-
 </style>

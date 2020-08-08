@@ -1,9 +1,7 @@
 <template>
   <div class="wrapper">
-    <Imagebanner
-      img="http://melaka.aspirethemes.com/content/images/size/w1500/2019/09/room-7TOLFyu1Dp4-unsplash.jpg"
-    />
-    <Cardcontent txt="Organizing Your Content with Ghost" name="OLIVIA THOMAS" date="29.NOV.2018" />
+    <Imagebanner :img="source" />
+    <Cardcontent :txt="title" :name="name" :date="date" />
   </div>
 </template>
 
@@ -12,6 +10,7 @@ import Imagebanner from "./Imagebanner";
 import Cardcontent from "./Cardcontent";
 export default {
   name: "Banner",
+  props: ["source", "title", "name", "date"],
   components: {
     Imagebanner,
     Cardcontent,

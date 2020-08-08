@@ -8,16 +8,14 @@ export { default as Card } from '../../components/card-part/Card.vue'
 export { default as Maincard } from '../../components/card-part/Maincard.vue'
 export { default as Banner } from '../../components/banner-part/Banner.vue'
 export { default as Cardcontent } from '../../components/banner-part/Cardcontent.vue'
-export { default as Cardcontentresponsive } from '../../components/banner-part/Cardcontentresponsive.vue'
 export { default as Imagebanner } from '../../components/banner-part/Imagebanner.vue'
 export { default as Boxtxt } from '../../components/category-part/Boxtxt.vue'
 export { default as Categories } from '../../components/category-part/Categories.vue'
 export { default as Lifestyle } from '../../components/category-part/Lifestyle.vue'
 export { default as Work } from '../../components/category-part/Work.vue'
-export { default as Navbar } from '../../components/navbar-part/Navbar.vue'
-export { default as Navbaritem } from '../../components/navbar-part/Navbaritem.vue'
 export { default as Footer } from '../../components/footer-part/Footer.vue'
 export { default as Footercard } from '../../components/footer-part/Footercard.vue'
+export { default as Navbar } from '../../components/navbar-part/Navbar.vue'
 export { default as Contact } from '../../components/page-contact/Contact.vue'
 export { default as Tag } from '../../components/tags-part/Tag.vue'
 export { default as Tagscardbox } from '../../components/tags-part/Tagscardbox.vue'
@@ -42,16 +40,14 @@ export const LazyCard = import('../../components/card-part/Card.vue' /* webpackC
 export const LazyMaincard = import('../../components/card-part/Maincard.vue' /* webpackChunkName: "components/card-part/Maincard'}" */).then(c => c.default || c)
 export const LazyBanner = import('../../components/banner-part/Banner.vue' /* webpackChunkName: "components/banner-part/Banner'}" */).then(c => c.default || c)
 export const LazyCardcontent = import('../../components/banner-part/Cardcontent.vue' /* webpackChunkName: "components/banner-part/Cardcontent'}" */).then(c => c.default || c)
-export const LazyCardcontentresponsive = import('../../components/banner-part/Cardcontentresponsive.vue' /* webpackChunkName: "components/banner-part/Cardcontentresponsive'}" */).then(c => c.default || c)
 export const LazyImagebanner = import('../../components/banner-part/Imagebanner.vue' /* webpackChunkName: "components/banner-part/Imagebanner'}" */).then(c => c.default || c)
 export const LazyBoxtxt = import('../../components/category-part/Boxtxt.vue' /* webpackChunkName: "components/category-part/Boxtxt'}" */).then(c => c.default || c)
 export const LazyCategories = import('../../components/category-part/Categories.vue' /* webpackChunkName: "components/category-part/Categories'}" */).then(c => c.default || c)
 export const LazyLifestyle = import('../../components/category-part/Lifestyle.vue' /* webpackChunkName: "components/category-part/Lifestyle'}" */).then(c => c.default || c)
 export const LazyWork = import('../../components/category-part/Work.vue' /* webpackChunkName: "components/category-part/Work'}" */).then(c => c.default || c)
-export const LazyNavbar = import('../../components/navbar-part/Navbar.vue' /* webpackChunkName: "components/navbar-part/Navbar'}" */).then(c => c.default || c)
-export const LazyNavbaritem = import('../../components/navbar-part/Navbaritem.vue' /* webpackChunkName: "components/navbar-part/Navbaritem'}" */).then(c => c.default || c)
 export const LazyFooter = import('../../components/footer-part/Footer.vue' /* webpackChunkName: "components/footer-part/Footer'}" */).then(c => c.default || c)
 export const LazyFootercard = import('../../components/footer-part/Footercard.vue' /* webpackChunkName: "components/footer-part/Footercard'}" */).then(c => c.default || c)
+export const LazyNavbar = import('../../components/navbar-part/Navbar.vue' /* webpackChunkName: "components/navbar-part/Navbar'}" */).then(c => c.default || c)
 export const LazyContact = import('../../components/page-contact/Contact.vue' /* webpackChunkName: "components/page-contact/Contact'}" */).then(c => c.default || c)
 export const LazyTag = import('../../components/tags-part/Tag.vue' /* webpackChunkName: "components/tags-part/Tag'}" */).then(c => c.default || c)
 export const LazyTagscardbox = import('../../components/tags-part/Tagscardbox.vue' /* webpackChunkName: "components/tags-part/Tagscardbox'}" */).then(c => c.default || c)

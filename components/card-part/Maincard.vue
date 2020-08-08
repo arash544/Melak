@@ -1,15 +1,21 @@
 <template>
-  <div class="main" >
+  <div class="main">
     <div class="wrapper">
-      <Card v-for="article in articles" :key="article.id"
+      <Card
+        v-for="article in articles"
+        :key="article.id"
         :id="article.id"
-        :img="article._embedded['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']"
+        :img="
+          article._embedded['wp:featuredmedia'][0]['media_details']['sizes'][
+            'full'
+          ]['source_url']
+        "
         :title="article.title.rendered"
         :name="article._embedded.author[0].name"
         :date="article.date"
       />
     </div>
-    <Buttonmore @click="addmore"/>
+    <Buttonmore @click="addmore" />
   </div>
 </template>
 
@@ -18,41 +24,34 @@ import Card from "./Card";
 import Buttonmore from "@/components/Buttonmore";
 export default {
   name: "Maincard",
-  // asyncData(context) {
-  //     return fetch('http://localhost:8888/melaka/wp-json/wp/v2/posts?_embed')
-  //     .then(res=>res.json())
-  //     .then(rs=>{
-  //       return{
-  //         articles:rs
-  //       }
-  //     })
-  // },
-  data(){
-    return{
-      articles:[]
-    }
+  data() {
+    return {
+      articles: [],
+    };
   },
   components: {
     Card,
-    Buttonmore
+    Buttonmore,
   },
   created() {
-    fetch('http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=9&categories=9&_embed')
-      .then(res=>res.json())
-      .then(rs=>{
-         this.articles=rs
-        //  console.log(rs)
-      })
-      
+    fetch(
+      "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=9&categories=9&_embed"
+    )
+      .then((res) => res.json())
+      .then((rs) => {
+        this.articles = rs;
+      });
   },
   methods: {
-    addmore(){
-       fetch('http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=12&categories=9&_embed')
-      .then(res=>res.json())
-      .then(rs=>{
-         this.articles=rs
-      })
-    }
+    addmore() {
+      fetch(
+        "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=12&categories=9&_embed"
+      )
+        .then((res) => res.json())
+        .then((rs) => {
+          this.articles = rs;
+        });
+    },
   },
 };
 </script>
@@ -73,10 +72,8 @@ export default {
   align-items: center;
   width: 100%;
   height: auto;
-    @media only screen and (max-width: 1000px) {
-    
+  @media only screen and (max-width: 1000px) {
     margin-top: 200px;
-   
   }
 }
 .wrapper {
@@ -110,5 +107,4 @@ export default {
     margin-bottom: 0px;
   }
 }
-
 </style>

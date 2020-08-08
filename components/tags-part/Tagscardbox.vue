@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <nuxt-link to="/">
+    <nuxt-link :to="`/tags/${id}`">
       <img :src="img" alt />
       <h4>{{txt}}</h4>
     </nuxt-link>

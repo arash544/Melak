@@ -43,6 +43,13 @@
     "_name": "_5a5aca96"
   },
   {
+    "name": "tags-id",
+    "path": "/tags/:id?",
+    "component": "/Users/arashazimdoust/Desktop/Archive/pages/tags/_id.vue",
+    "chunkName": "pages/tags/_id",
+    "_name": "_0dfd2f6d"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/arashazimdoust/Desktop/Archive/pages/index.vue",

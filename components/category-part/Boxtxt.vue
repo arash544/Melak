@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="box">
       <div class="txt">
-        <nuxt-link to="/" v-html="link">{{link}}</nuxt-link>
+        <nuxt-link :to="`/cards/${id}`" v-html="link">{{link}}</nuxt-link>
         <h5>{{getDate}}</h5>
       </div>
       <div class="img">
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: "Boxtxt",
-  props: ["link", "date", "img"],
+  props: ["link", "date", "img","id"],
     computed: {
     getDate(){
       return new Date(this.date).toLocaleDateString('en-US')
@@ -46,8 +46,6 @@ export default {
   margin-bottom: 10px;
 }
 .box {
-  // -webkit-box-shadow: 8px 8px 0 var(--bg-gray);
-  // box-shadow: 8px 8px 0 var(--bg-gray);
   border: 1px solid var(--color-border);
   padding: 10px;
   width: 80%;
@@ -66,6 +64,9 @@ export default {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+    @media only screen and (max-width: 768px) {
+    width: 95%;
+  }
 }
 .txt {
   width: 70%;

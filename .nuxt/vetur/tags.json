@@ -59,12 +59,6 @@
   "LazyCardcontent": {
     "description": "Auto imported from components/banner-part/Cardcontent.vue"
   },
-  "Cardcontentresponsive": {
-    "description": "Auto imported from components/banner-part/Cardcontentresponsive.vue"
-  },
-  "LazyCardcontentresponsive": {
-    "description": "Auto imported from components/banner-part/Cardcontentresponsive.vue"
-  },
   "Imagebanner": {
     "description": "Auto imported from components/banner-part/Imagebanner.vue"
   },
@@ -95,18 +89,6 @@
   "LazyWork": {
     "description": "Auto imported from components/category-part/Work.vue"
   },
-  "Navbar": {
-    "description": "Auto imported from components/navbar-part/Navbar.vue"
-  },
-  "LazyNavbar": {
-    "description": "Auto imported from components/navbar-part/Navbar.vue"
-  },
-  "Navbaritem": {
-    "description": "Auto imported from components/navbar-part/Navbaritem.vue"
-  },
-  "LazyNavbaritem": {
-    "description": "Auto imported from components/navbar-part/Navbaritem.vue"
-  },
   "Footer": {
     "description": "Auto imported from components/footer-part/Footer.vue"
   },
@@ -118,6 +100,12 @@
   },
   "LazyFootercard": {
     "description": "Auto imported from components/footer-part/Footercard.vue"
+  },
+  "Navbar": {
+    "description": "Auto imported from components/navbar-part/Navbar.vue"
+  },
+  "LazyNavbar": {
+    "description": "Auto imported from components/navbar-part/Navbar.vue"
   },
   "Contact": {
     "description": "Auto imported from components/page-contact/Contact.vue"

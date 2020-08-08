@@ -18,8 +18,8 @@ export default {
   components: {
     Tagscardbox,
   },
-        data(){
-    return{
+data(){
+  return{
       tags:[]
     }
   },

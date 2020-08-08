@@ -44,7 +44,9 @@ export default {
 } */
 body{
   width:100%;
-  overflow-x:hidden;
+  overflow: auto ;
+  /* overflow-x:hidden !important; */
+  /* overflow-y:hidden !important; */
 }
 main{
   min-height: 100vh;

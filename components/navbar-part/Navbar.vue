@@ -56,12 +56,8 @@
 </template>
 
 <script>
-import Navbaritem from "./Navbaritem";
 export default {
   name: "Navbar",
-  components: {
-    Navbaritem,
-  },
 
   data() {
     return {
@@ -69,8 +65,8 @@ export default {
     };
   },
   mounted() {
-    if (JSON.parse(localStorage.getItem("theme")===null)){
-       localStorage.setItem("theme", JSON.stringify({ theme: "light" }));
+    if (JSON.parse(localStorage.getItem("theme") === null)) {
+      localStorage.setItem("theme", JSON.stringify({ theme: "light" }));
     }
     let th = JSON.parse(localStorage.getItem("theme"));
     this.theme = th.theme;
@@ -98,9 +94,6 @@ export default {
         document.body.classList.remove("dark-mode");
         localStorage.setItem("theme", JSON.stringify({ theme: "light" }));
       }
-
-      //document.body.classList.toggle("normal-mode");
-      // console.log('th')
     },
   },
 };
@@ -108,21 +101,22 @@ export default {
 
 <style lang="scss">
 body {
-
   &.dark-mode {
-      .wrap{
-    .content{
-          h4,p{
-      color: var(--color-white);
+    .wrap {
+      .content {
+        h4,
+        p {
+          color: var(--color-white);
+        }
+      }
+      .icons {
+        a,
+        svg {
+          color: var(--color-white);
+          fill: var(--color-white);
+        }
+      }
     }
-    }
-.icons{
-  a,svg{
-    color: var(--color-white);
-    fill: var(--color-white);
-  }
-}
-  }
     color: var(--color-white);
     background-color: var(--color-border-dark);
     a,
@@ -411,7 +405,3 @@ a {
   }
 }
 </style>
-
-
-
-

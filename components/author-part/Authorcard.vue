@@ -5,8 +5,8 @@
         <img :src="img" alt />
       </div>
       <div class="txt">
-        <nuxt-link to="/" >{{link}}</nuxt-link>
-        <h5 v-html="txt">{{txt}}</h5>
+        <nuxt-link to="/">{{ link }}</nuxt-link>
+        <h5 v-html="txt">{{ txt }}</h5>
       </div>
     </div>
   </div>
@@ -20,9 +20,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-*{
-  // border: 1px solid pink;
-}
 .wrap {
   width: 100%;
   display: -webkit-box;
@@ -50,9 +47,7 @@ export default {
   }
 }
 .box {
-  // -webkit-box-shadow: 8px 8px 0 var(--bg-gray);
-  // box-shadow: 8px 8px 0 var(--bg-gray);
-    border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border);
   padding: 10px;
   width: 90%;
   display: -webkit-box;
@@ -75,7 +70,7 @@ export default {
   }
 }
 .txt {
-  padding-top:20px;
+  padding-top: 20px;
   padding-left: 10px;
   width: 70%;
   display: -webkit-box;
@@ -135,11 +130,10 @@ export default {
     min-width: 64px;
     -o-object-fit: cover;
     object-fit: cover;
-      @media only screen and (max-width: 768px) {
-  width: 100px;
-  height: 100px;
-  }
+    @media only screen and (max-width: 768px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
-
 </style>

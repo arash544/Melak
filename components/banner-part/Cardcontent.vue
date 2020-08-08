@@ -2,7 +2,7 @@
 
   <div class="wrap" >
     <h2 class="title">
-      <a href="/">{{txt}}</a>
+      <a href="/" v-html="txt"></a>
     </h2>
     <div class="body">
       <h5>

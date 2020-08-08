@@ -1,15 +1,21 @@
 <template>
   <div class="wrap">
     <div class="title">
-      <a href="/">{{title}}</a>
+      <a href="/">{{ title }}</a>
       <img :src="img" alt />
     </div>
     <Spaceline width="99" />
-    <Boxtxt v-for="work in works" :key="work.id"
-    :id="work.id"
+    <Boxtxt
+      v-for="work in works"
+      :key="work.id"
+      :id="work.id"
       :link="work.title.rendered"
       :date="work.date"
-      :img="work._embedded['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']"
+      :img="
+        work._embedded['wp:featuredmedia'][0]['media_details']['sizes']['full'][
+          'source_url'
+        ]
+      "
     />
   </div>
 </template>
@@ -24,19 +30,19 @@ export default {
     Spaceline,
     Boxtxt,
   },
-    data(){
-    return{
-      works:[]
-    }
+  data() {
+    return {
+      works: [],
+    };
   },
-    created() {
-    fetch('http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=4&categories=15&_embed')
-      .then(res=>res.json())
-      .then(rs=>{
-         this.works=rs
-        //  console.log(rs)
-      })
-      
+  created() {
+    fetch(
+      "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=4&categories=15&_embed"
+    )
+      .then((res) => res.json())
+      .then((rs) => {
+        this.works = rs; 
+      });
   },
 };
 </script>
@@ -98,5 +104,4 @@ export default {
 .change {
   height: 100%;
 }
-
 </style>

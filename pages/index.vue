@@ -1,9 +1,8 @@
 <template>
   <section class="main-wrapper">
     <Spaceline />
-    <Banner />
+    <Banner source="/roommain.jpg" title="Organizing Your Content with Ghost" name="OLIVIA THOMAS" date="29.NOV.2018"/>
     <Maincard />
-    
     <Categories />
     <Lines title="TAGS" img="angle-right.svg" />
     <Tag />

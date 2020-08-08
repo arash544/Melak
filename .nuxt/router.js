@@ -9,6 +9,7 @@ const _751e6ff2 = () => interopDefault(import('../pages/authors/index.vue' /* we
 const _590bc6da = () => interopDefault(import('../pages/authors/_id.vue' /* webpackChunkName: "pages/authors/_id" */))
 const _1f005ef2 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
 const _5a5aca96 = () => interopDefault(import('../pages/cards/_id.vue' /* webpackChunkName: "pages/cards/_id" */))
+const _0dfd2f6d = () => interopDefault(import('../pages/tags/_id.vue' /* webpackChunkName: "pages/tags/_id" */))
 const _2a17580e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -51,6 +52,10 @@ export const routerOptions = {
     path: "/cards/:id?",
     component: _5a5aca96,
     name: "cards-id"
+  }, {
+    path: "/tags/:id?",
+    component: _0dfd2f6d,
+    name: "tags-id"
   }, {
     path: "/",
     component: _2a17580e,
