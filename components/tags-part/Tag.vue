@@ -1,11 +1,26 @@
 <template>
   <div class="main">
     <div class="wrapper">
-      <Tagscardbox v-for="tag in tags" :key="tag.id"
-        :img="tag._embedded['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']"
-        :txt="tag.title.rendered"
-        :id="tag.id"
-      />
+     <Tagscardbox
+        img=""
+        txt="Education"
+        id="10"
+      /> 
+       <Tagscardbox
+        img=""
+        txt="Nature"
+        id="11"
+      /> 
+       <Tagscardbox
+        img=""
+        txt="Inspiration"
+        id="12"
+      /> 
+       <Tagscardbox
+        img=""
+        txt="Travel"
+        id="13"
+      /> 
     </div>
   </div>
 </template>
@@ -18,20 +33,21 @@ export default {
   components: {
     Tagscardbox,
   },
-data(){
-  return{
-      tags:[]
-    }
-  },
-    created() {
-    fetch('http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=4&categories=20&_embed')
-      .then(res=>res.json())
-      .then(rs=>{
-         this.tags=rs
-        //  console.log(rs)
-      })
+// data(){
+//   return{
+//       tags:[]
+//     }
+//   },
+    // created() {
+    // fetch('http://localhost:8888/portfolio/wp-json/wp/v2/tags')
+    //   .then(res=>res.json())
+    //   .then(rs=>{
+    //     console.log(rs)
+    //      this.tags=rs
+    //     //  console.log(rs)
+    //   })
       
-  },
+  // },
 };
 </script>
 

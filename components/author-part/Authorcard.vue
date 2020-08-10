@@ -5,7 +5,7 @@
         <img :src="img" alt />
       </div>
       <div class="txt">
-        <nuxt-link to="/">{{ link }}</nuxt-link>
+        <nuxt-link :to="`/authors/${id}`">{{ link }}</nuxt-link>
         <h5 v-html="txt">{{ txt }}</h5>
       </div>
     </div>
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: "Authorcard",
-  props: ["link", "txt", "img"],
+  props: ["link", "txt", "img","id"],
 };
 </script>
 

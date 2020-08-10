@@ -3,19 +3,26 @@
     <div class="title">
       <nuxt-link to="/">{{title}}</nuxt-link>
     </div>
-    <nuxt-link class="list" to="/">{{link1}}</nuxt-link>
-    <nuxt-link class="list" to="/">{{link2}}</nuxt-link>
-    <nuxt-link class="list" to="/">{{link3}}</nuxt-link>
-    <nuxt-link class="list" to="/">{{link4}}</nuxt-link>
-    <nuxt-link class="list" to="/">{{link5}}</nuxt-link>
-    <nuxt-link class="list" to="/">{{link6}}</nuxt-link>
+
+<div v-if="tags">
+    <nuxt-link v-for="tag in tags" :key="tag.id" 
+      class="list" :to="`/tags/${tag.id}`">{{tag.name}}
+    </nuxt-link>
+</div>
+<div v-else>
+  <nuxt-link v-for="nav in navs" :key="nav.id" 
+      class="list" :to="`${nav.link}`">{{nav.name}}
+    </nuxt-link>
+</div>
+
+
   </div>
 </template>
 
 <script>
 export default {
   name: "Footercard",
-  props: ["title", "link1", "link2", "link3", "link4", "link5", "link6"],
+  props: ["title", "tags","navs"],
 };
 </script>
 

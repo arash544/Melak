@@ -3,14 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _69870d98 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _199d68af = () => interopDefault(import('../pages/authors.vue' /* webpackChunkName: "pages/authors" */))
-const _751e6ff2 = () => interopDefault(import('../pages/authors/index.vue' /* webpackChunkName: "pages/authors/index" */))
-const _590bc6da = () => interopDefault(import('../pages/authors/_id.vue' /* webpackChunkName: "pages/authors/_id" */))
-const _1f005ef2 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _5a5aca96 = () => interopDefault(import('../pages/cards/_id.vue' /* webpackChunkName: "pages/cards/_id" */))
-const _0dfd2f6d = () => interopDefault(import('../pages/tags/_id.vue' /* webpackChunkName: "pages/tags/_id" */))
-const _2a17580e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _c8b6e61c = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _4731ecc5 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _d68cd7d0 = () => interopDefault(import('../pages/authors/_id.vue' /* webpackChunkName: "pages/authors/_id" */))
+const _456e9f73 = () => interopDefault(import('../pages/cards/_id.vue' /* webpackChunkName: "pages/cards/_id" */))
+const _e4e2ca22 = () => interopDefault(import('../pages/tags/_id.vue' /* webpackChunkName: "pages/tags/_id" */))
+const _89473092 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -30,35 +28,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _69870d98,
+    component: _c8b6e61c,
     name: "about"
   }, {
-    path: "/authors",
-    component: _199d68af,
-    children: [{
-      path: "",
-      component: _751e6ff2,
-      name: "authors"
-    }, {
-      path: ":id",
-      component: _590bc6da,
-      name: "authors-id"
-    }]
-  }, {
     path: "/contact",
-    component: _1f005ef2,
+    component: _4731ecc5,
     name: "contact"
   }, {
+    path: "/authors/:id?",
+    component: _d68cd7d0,
+    name: "authors-id"
+  }, {
     path: "/cards/:id?",
-    component: _5a5aca96,
+    component: _456e9f73,
     name: "cards-id"
   }, {
     path: "/tags/:id?",
-    component: _0dfd2f6d,
+    component: _e4e2ca22,
     name: "tags-id"
   }, {
     path: "/",
-    component: _2a17580e,
+    component: _89473092,
     name: "index"
   }],
 

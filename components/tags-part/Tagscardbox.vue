@@ -11,7 +11,7 @@
 <script>
 export default {
   name: "Tagscardbox",
-  props: ["img", "txt"],
+  props: ["img", "txt","id"],
 };
 </script>
 

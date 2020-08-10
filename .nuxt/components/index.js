@@ -4,11 +4,11 @@ export { default as Logo } from '../../components/Logo.vue'
 export { default as Spaceline } from '../../components/Spaceline.vue'
 export { default as Authorcard } from '../../components/author-part/Authorcard.vue'
 export { default as Authore } from '../../components/author-part/Authore.vue'
-export { default as Card } from '../../components/card-part/Card.vue'
-export { default as Maincard } from '../../components/card-part/Maincard.vue'
 export { default as Banner } from '../../components/banner-part/Banner.vue'
 export { default as Cardcontent } from '../../components/banner-part/Cardcontent.vue'
 export { default as Imagebanner } from '../../components/banner-part/Imagebanner.vue'
+export { default as Card } from '../../components/card-part/Card.vue'
+export { default as Maincard } from '../../components/card-part/Maincard.vue'
 export { default as Boxtxt } from '../../components/category-part/Boxtxt.vue'
 export { default as Categories } from '../../components/category-part/Categories.vue'
 export { default as Lifestyle } from '../../components/category-part/Lifestyle.vue'
@@ -36,11 +36,11 @@ export const LazyLogo = import('../../components/Logo.vue' /* webpackChunkName: 
 export const LazySpaceline = import('../../components/Spaceline.vue' /* webpackChunkName: "components/Spaceline'}" */).then(c => c.default || c)
 export const LazyAuthorcard = import('../../components/author-part/Authorcard.vue' /* webpackChunkName: "components/author-part/Authorcard'}" */).then(c => c.default || c)
 export const LazyAuthore = import('../../components/author-part/Authore.vue' /* webpackChunkName: "components/author-part/Authore'}" */).then(c => c.default || c)
-export const LazyCard = import('../../components/card-part/Card.vue' /* webpackChunkName: "components/card-part/Card'}" */).then(c => c.default || c)
-export const LazyMaincard = import('../../components/card-part/Maincard.vue' /* webpackChunkName: "components/card-part/Maincard'}" */).then(c => c.default || c)
 export const LazyBanner = import('../../components/banner-part/Banner.vue' /* webpackChunkName: "components/banner-part/Banner'}" */).then(c => c.default || c)
 export const LazyCardcontent = import('../../components/banner-part/Cardcontent.vue' /* webpackChunkName: "components/banner-part/Cardcontent'}" */).then(c => c.default || c)
 export const LazyImagebanner = import('../../components/banner-part/Imagebanner.vue' /* webpackChunkName: "components/banner-part/Imagebanner'}" */).then(c => c.default || c)
+export const LazyCard = import('../../components/card-part/Card.vue' /* webpackChunkName: "components/card-part/Card'}" */).then(c => c.default || c)
+export const LazyMaincard = import('../../components/card-part/Maincard.vue' /* webpackChunkName: "components/card-part/Maincard'}" */).then(c => c.default || c)
 export const LazyBoxtxt = import('../../components/category-part/Boxtxt.vue' /* webpackChunkName: "components/category-part/Boxtxt'}" */).then(c => c.default || c)
 export const LazyCategories = import('../../components/category-part/Categories.vue' /* webpackChunkName: "components/category-part/Categories'}" */).then(c => c.default || c)
 export const LazyLifestyle = import('../../components/category-part/Lifestyle.vue' /* webpackChunkName: "components/category-part/Lifestyle'}" */).then(c => c.default || c)

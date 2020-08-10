@@ -35,18 +35,6 @@
   "LazyAuthore": {
     "description": "Auto imported from components/author-part/Authore.vue"
   },
-  "Card": {
-    "description": "Auto imported from components/card-part/Card.vue"
-  },
-  "LazyCard": {
-    "description": "Auto imported from components/card-part/Card.vue"
-  },
-  "Maincard": {
-    "description": "Auto imported from components/card-part/Maincard.vue"
-  },
-  "LazyMaincard": {
-    "description": "Auto imported from components/card-part/Maincard.vue"
-  },
   "Banner": {
     "description": "Auto imported from components/banner-part/Banner.vue"
   },
@@ -64,6 +52,18 @@
   },
   "LazyImagebanner": {
     "description": "Auto imported from components/banner-part/Imagebanner.vue"
+  },
+  "Card": {
+    "description": "Auto imported from components/card-part/Card.vue"
+  },
+  "LazyCard": {
+    "description": "Auto imported from components/card-part/Card.vue"
+  },
+  "Maincard": {
+    "description": "Auto imported from components/card-part/Maincard.vue"
+  },
+  "LazyMaincard": {
+    "description": "Auto imported from components/card-part/Maincard.vue"
   },
   "Boxtxt": {
     "description": "Auto imported from components/category-part/Boxtxt.vue"

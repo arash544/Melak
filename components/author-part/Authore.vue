@@ -4,13 +4,10 @@
       <Authorcard
         v-for="author in authors"
         :key="author.id"
-        :img="
-          author._embedded['wp:featuredmedia'][0]['media_details']['sizes'][
-            'full'
-          ]['source_url']
-        "
-        :link="author._embedded.author[0].name"
-        :txt="author.content.rendered"
+        :id="author.id"
+        :img="author.avatar_urls['48']"
+        :link="author.name"
+        :txt="author.description"
       />
     </div>
   </div>
@@ -30,10 +27,11 @@ export default {
   },
   created() {
     fetch(
-      "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=3&categories=1&_embed"
+      "http://localhost:8888/portfolio/wp-json/wp/v2/users"
     )
       .then((res) => res.json())
       .then((rs) => {
+        console.log(rs)
         this.authors = rs;
       });
   },

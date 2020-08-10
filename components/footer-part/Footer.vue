@@ -1,22 +1,8 @@
 <template>
   <div class="footer">
-    <Footercard
-      title="TAGES"
-      link1="Education"
-      link2="Education"
-      link3="Education"
-      link4="Education"
-      link5="Education"
-      link6="Education"
+    <Footercard :tags="tags"
     />
-    <Footercard
-      title="TAGES"
-      link1="Education"
-      link2="Education"
-      link3="Education"
-      link4="Education"
-      link5="Education"
-      link6="Education"
+    <Footercard :navs="navs"
     />
     <div class="wrap">
       <Footercard title="TAGES" />
@@ -33,6 +19,17 @@ export default {
   components: {
     Footercard,
   },
+  data() {
+    return{
+      tags:[],
+      navs:[{name:'Home',link:'/'},{name:'About',link:'/about'},{name:'Contact',link:'/contact'}]
+    }
+  },
+  created() {
+    fetch(`http://localhost:8888/portfolio/wp-json/wp/v2/tags`)
+    .then(res=>res.json())
+    .then(rs=>this.tags=rs)
+  }
 };
 </script>
 

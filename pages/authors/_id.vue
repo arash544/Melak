@@ -1,14 +1,17 @@
 <template>
   <section class="main-wrapper">
+     <Spaceline/>
     <Author :articles="articles"/>
   </section>
 </template>
 
 <script>
+    import Spaceline from "@/components/Spaceline";
 import Author from "@/components/authors/main-part/Author";
 export default {
   components: {
     Author,
+     Spaceline,
   }, 
 
     asyncData(context) {
