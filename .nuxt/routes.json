@@ -2,43 +2,43 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/Users/mrk/Documents/Projects/melaka/Melak/pages/about.vue",
+    "component": "/Users/arashazimdoust/Desktop/Mel/pages/about.vue",
     "chunkName": "pages/about",
-    "_name": "_c8b6e61c"
+    "_name": "_67afa5c6"
   },
   {
     "name": "contact",
     "path": "/contact",
-    "component": "/Users/mrk/Documents/Projects/melaka/Melak/pages/contact.vue",
+    "component": "/Users/arashazimdoust/Desktop/Mel/pages/contact.vue",
     "chunkName": "pages/contact",
-    "_name": "_4731ecc5"
+    "_name": "_3cda2099"
   },
   {
     "name": "authors-id",
     "path": "/authors/:id?",
-    "component": "/Users/mrk/Documents/Projects/melaka/Melak/pages/authors/_id.vue",
+    "component": "/Users/arashazimdoust/Desktop/Mel/pages/authors/_id.vue",
     "chunkName": "pages/authors/_id",
-    "_name": "_d68cd7d0"
+    "_name": "_50bbbdec"
   },
   {
     "name": "cards-id",
     "path": "/cards/:id?",
-    "component": "/Users/mrk/Documents/Projects/melaka/Melak/pages/cards/_id.vue",
+    "component": "/Users/arashazimdoust/Desktop/Mel/pages/cards/_id.vue",
     "chunkName": "pages/cards/_id",
-    "_name": "_456e9f73"
+    "_name": "_71d92e47"
   },
   {
     "name": "tags-id",
     "path": "/tags/:id?",
-    "component": "/Users/mrk/Documents/Projects/melaka/Melak/pages/tags/_id.vue",
+    "component": "/Users/arashazimdoust/Desktop/Mel/pages/tags/_id.vue",
     "chunkName": "pages/tags/_id",
-    "_name": "_e4e2ca22"
+    "_name": "_4cece19b"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/mrk/Documents/Projects/melaka/Melak/pages/index.vue",
+    "component": "/Users/arashazimdoust/Desktop/Mel/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_89473092"
+    "_name": "_f130feea"
   }
 ]

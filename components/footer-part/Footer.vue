@@ -72,7 +72,6 @@ input {
   border: 0;
   padding-left: 10px;
   color: var(--color-gray);
-  // font-size: 15px;
   @media only screen and (max-width: 400px) {
     width: 100%;
     border-top-right-radius: 50px;

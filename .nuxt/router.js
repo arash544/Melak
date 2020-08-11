@@ -3,12 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _c8b6e61c = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _4731ecc5 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
-const _d68cd7d0 = () => interopDefault(import('../pages/authors/_id.vue' /* webpackChunkName: "pages/authors/_id" */))
-const _456e9f73 = () => interopDefault(import('../pages/cards/_id.vue' /* webpackChunkName: "pages/cards/_id" */))
-const _e4e2ca22 = () => interopDefault(import('../pages/tags/_id.vue' /* webpackChunkName: "pages/tags/_id" */))
-const _89473092 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _67afa5c6 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _3cda2099 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _50bbbdec = () => interopDefault(import('../pages/authors/_id.vue' /* webpackChunkName: "pages/authors/_id" */))
+const _71d92e47 = () => interopDefault(import('../pages/cards/_id.vue' /* webpackChunkName: "pages/cards/_id" */))
+const _4cece19b = () => interopDefault(import('../pages/tags/_id.vue' /* webpackChunkName: "pages/tags/_id" */))
+const _f130feea = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -28,27 +28,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _c8b6e61c,
+    component: _67afa5c6,
     name: "about"
   }, {
     path: "/contact",
-    component: _4731ecc5,
+    component: _3cda2099,
     name: "contact"
   }, {
     path: "/authors/:id?",
-    component: _d68cd7d0,
+    component: _50bbbdec,
     name: "authors-id"
   }, {
     path: "/cards/:id?",
-    component: _456e9f73,
+    component: _71d92e47,
     name: "cards-id"
   }, {
     path: "/tags/:id?",
-    component: _e4e2ca22,
+    component: _4cece19b,
     name: "tags-id"
   }, {
     path: "/",
-    component: _89473092,
+    component: _f130feea,
     name: "index"
   }],
 

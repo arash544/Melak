@@ -1,5 +1,4 @@
 <template>
-  <div class="wrap">
     <div class="box">
       <div class="img">
         <img :src="img" alt />
@@ -9,7 +8,6 @@
         <h5 v-html="txt">{{ txt }}</h5>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -20,36 +18,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrap {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  @media only screen and (max-width: 768px) {
-    margin-top: 30px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-  }
-}
+
 .box {
   border: 1px solid var(--color-border);
-  padding: 10px;
-  width: 90%;
+  margin-left: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,13 +37,15 @@ export default {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 25%;
   @media only screen and (max-width: 1300px) {
     width: 100%;
+    margin-top: 10px;
   }
 }
 .txt {
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 30px;
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +87,7 @@ export default {
   }
 }
 .img {
+  padding-left: 10px;
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +99,7 @@ export default {
     width: 40%;
   }
   img {
+    
     border-radius: 50%;
     width: 64px;
     height: 64px;
@@ -133,6 +109,7 @@ export default {
     @media only screen and (max-width: 768px) {
       width: 100px;
       height: 100px;
+      padding: 5px 5px 5px 5px;
     }
   }
 }

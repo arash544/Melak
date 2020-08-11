@@ -3,7 +3,7 @@
     <Details 
       showimg="true"
       showicons="true"
-      :img="articles[0]._embedded.author[0].avatar_urls['96']"
+      :img="articles[0]._embedded.author[0].simple_local_avatar.full"
       :name="articles[0]._embedded.author[0].name"
       :txt="articles[0]._embedded.author[0].description"
       location="CAIRO"

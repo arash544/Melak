@@ -18,7 +18,6 @@ export default {
    return fetch(`http://localhost:8888/portfolio/wp-json/wp/v2/posts?author=${context.route.params.id}&_embed`)
       .then(res=>res.json())
       .then(rs=>{
-        console.log(rs);
         return{
           articles:rs
         }
@@ -36,7 +35,4 @@ export default {
   flex-wrap: wrap;
   align-items: center;
 }
-// .content{
-//   padding: 0;
-// }
 </style>

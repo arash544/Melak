@@ -42,9 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// *{
-//   border: 1px solid #ccc
-// }
+
 .page-wrap{
   width:70%;
 }
@@ -55,14 +53,6 @@ export default {
   align-items:center;
   flex-wrap: wrap;
 }
-// .wrap {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 400px;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-// }
 
 .photo {
   margin-top: 10px;
@@ -88,15 +78,14 @@ export default {
     font-weight: 700;
   }
   p {
+    width:100%;
     margin-top: 8px;
     font-size: 16px;
     line-height: 24px;
     color: var(--color-text);
     font-weight: 100;
-      @media only screen and (max-width: 350px) {
-    width: 70%;
+    
     text-align: center;
-  }
   }
 }
 .icons {
@@ -105,6 +94,7 @@ export default {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  width:100%;
 svg{
     width:15px;
     &:hover{
@@ -115,7 +105,7 @@ svg{
 
 }
   a{
-margin:10px 15px;
+margin:10px 10px;
 color: var(--color-text);
 font-weight: 100;
 font-size: 12px;

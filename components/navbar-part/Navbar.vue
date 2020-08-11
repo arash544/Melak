@@ -24,7 +24,7 @@
     </button>
     <ul class="logo">
       <a href="/">
-        <h2 ref="logo">Melaka</h2>
+        <h2 ref="logo">SORCA</h2>
       </a>
     </ul>
     <ul class="list" ref="menu">
@@ -102,8 +102,7 @@ export default {
 <style lang="scss">
 body {
   &.dark-mode {
-    .wrap {
-      .content {
+      .contents {
         h4,
         p {
           color: var(--color-white);
@@ -116,7 +115,6 @@ body {
           fill: var(--color-white);
         }
       }
-    }
     color: var(--color-white);
     background-color: var(--color-border-dark);
     a,
@@ -219,21 +217,6 @@ body {
       border-color: #f5f5f5;
     }
   }
-
-  // img{
-  // filter:blur(10px);
-  // filter:grayscale(50%);
-  // filter:sepia(1);
-  // &:hover{
-  //   filter: unset;
-  // }
-  // }
-
-  //   &.dark-mode{
-  //   background-color:var(--color-text);
-  //   color: var(--color-white);
-
-  // }
 }
 </style>
 

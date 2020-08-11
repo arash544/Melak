@@ -1,8 +1,6 @@
 <template>
-  <!-- <div class="wrap" v-if="show"> -->
   <div class="wrap" >
     <div class="image-parent" >
-      <!-- <img  v-lazy="img" :src="img" /> -->
       <img :src="img" />
     </div>
     <div class="card-body">
@@ -26,26 +24,6 @@ export default {
       return new Date(this.date).toLocaleDateString('en-US')
     }
   },
-  // data() {
-  //   return {
-  //     show:false
-  //   }
-  // },
-  // created() {
-  //   setTimeout(()=>{
-  //   this.show=true;
-  //  },3000)
-  // },
-
-  
-  // computed: {
-    // img() {
-    //   return 'http://melaka.aspirethemes.com/content/images/size/w1500/2019/09/woodwatch--Hr_uHRfImo-unsplash-1.jpg'
-    // },
-    // img() {
-    //   return 'search.svg'
-    // },
-  // }
 };
 </script>
 

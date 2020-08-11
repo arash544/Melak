@@ -2,22 +2,22 @@
   <div class="main">
     <div class="wrapper">
      <Tagscardbox
-        img=""
+        img="/education.jpeg"
         txt="Education"
         id="10"
       /> 
        <Tagscardbox
-        img=""
-        txt="Nature"
+        img="/lifestyle.jpeg"
+        txt="Lifestyle"
         id="11"
       /> 
        <Tagscardbox
-        img=""
-        txt="Inspiration"
+        img="/work.jpeg"
+        txt="Work"
         id="12"
       /> 
        <Tagscardbox
-        img=""
+        img="/travel.jpeg"
         txt="Travel"
         id="13"
       /> 
@@ -33,21 +33,6 @@ export default {
   components: {
     Tagscardbox,
   },
-// data(){
-//   return{
-//       tags:[]
-//     }
-//   },
-    // created() {
-    // fetch('http://localhost:8888/portfolio/wp-json/wp/v2/tags')
-    //   .then(res=>res.json())
-    //   .then(rs=>{
-    //     console.log(rs)
-    //      this.tags=rs
-    //     //  console.log(rs)
-    //   })
-      
-  // },
 };
 </script>
 

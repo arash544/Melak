@@ -18,7 +18,6 @@ export default {
 
 <style lang="scss" scoped>
 .wrappers {
-  // margin-top: -200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

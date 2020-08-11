@@ -5,7 +5,7 @@
         v-for="author in authors"
         :key="author.id"
         :id="author.id"
-        :img="author.avatar_urls['48']"
+        :img="author.simple_local_avatar.full"
         :link="author.name"
         :txt="author.description"
       />
@@ -31,7 +31,6 @@ export default {
     )
       .then((res) => res.json())
       .then((rs) => {
-        console.log(rs)
         this.authors = rs;
       });
   },
@@ -40,42 +39,19 @@ export default {
 
 <style lang="scss" scoped>
 .main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 100%;
-  height: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 .wrapper {
-  width: 60.5%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width:65.50%;
   display: flex;
-
-  -webkit-box-pack: center;
-
-  -ms-flex-pack: center;
-
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-  @media only screen and (min-width: 1650px) {
-    width: 63%;
-  }
-  @media only screen and (max-width: 1650px) {
-    width: 65%;
-  }
+  align-items: stretch;
   @media only screen and (max-width: 1370px) {
     width: 69%;
   }

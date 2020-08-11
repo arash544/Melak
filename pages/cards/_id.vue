@@ -1,42 +1,23 @@
 <template>
   <section class="main-wrapper">
     <Spaceline />
-    <!-- <Banner :title="posttitle" :source="img" /> -->
     <Banner :title="posttitle" :source="img" />
     <div class="content" v-html="content"></div>
-    <!-- <Textframe txt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ex beatae esse, dolore vel inventore, maxime deleniti qui nisi, neque quo praesentium. Nisi odio sit quasi dolorum enim minima dolor, dolores adipisci explicabo nobis asperiores officia, minus omnis laboriosam, delectus iste exercitationem facere tempore molestiae in deleniti ullam quidem fuga? Temporibus nesciunt, odio perspiciatis doloribus nihil voluptas, reprehenderit nam neque soluta culpa nemo esse perferendis harum? Adipisci officia voluptas unde, earum optio at nobis est quae, voluptatem sapiente eos! Dolorum sit nobis culpa mollitia odit eos harum, deleniti dignissimos, saepe accusamus facilis! Ea corrupti quo officiis facere, natus quidem voluptatibus."/>
-  <Img/>
-  <Textframe txt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam! Assumenda iste repellat dicta perferendis in porro beatae deserunt placeat, doloribus reiciendis fugit nisi provident laudantium magni impedit accusantium obcaecati. Aliquam quos quo magnam distinctio aperiam, commodi recusandae temporibus, aut quibusdam dolorum repudiandae provident eligendi minima dignissimos impedit architecto at?"/>
-  <Video/>
-  <Textframe txt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam! Assumenda iste repellat dicta perferendis in porro beatae deserunt placeat, doloribus reiciendis fugit nisi provident laudantium magni impedit accusantium obcaecati. Aliquam quos quo magnam distinctio aperiam, commodi recusandae temporibus, aut quibusdam dolorum repudiandae provident eligendi minima dignissimos impedit architecto at?"/>
-  <Photo/> -->
   </section>
 </template>
 
 <script>
-// import Banner from "@/components/page-about/banner-part/Banner";
 import Banner from "@/components/banner-part/Banner";
-// import Imagebanner from "@/components/banner-part/Imagebanner";
-// import Textframe from "@/components/page-about/text-part/Textframe";
-// import Img from "@/components/page-about/image-part/Img";
-// import Video from '@/components/page-cards/video-part/Video';
-// import Photo from '@/components/page-cards/image-part/Photo';
 import Spaceline from "@/components/Spaceline";
 export default {
   components: {
     Banner,
-    // Imagebanner,
-    // Img,
-    // Textframe,
-    // Video,
-    // Photo,
     Spaceline,
   },
   asyncData(context) {
     return fetch(`http://localhost:8888/portfolio/wp-json/wp/v2/posts/${context.route.params.id}?_embed`)
       .then((res) => res.json())
       .then((rs) => {
-        console.log(rs);
         return {
           posttitle: rs.title.rendered,
           content: rs.content.rendered,
