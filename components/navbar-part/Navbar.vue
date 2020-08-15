@@ -353,8 +353,8 @@ h2 {
 .mode {
   border: 0;
   outline: none;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   background-color: transparent;
   background-image: var(--color-mode-icon);
   border: 0;
@@ -367,6 +367,7 @@ img {
 }
 button {
   margin-left: 25px;
+  margin-top: 5px;
   @media only screen and (max-width: 1000px) {
     margin-left: 0px;
   }

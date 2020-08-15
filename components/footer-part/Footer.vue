@@ -26,7 +26,7 @@ export default {
     }
   },
   created() {
-    fetch(`http://localhost:8888/portfolio/wp-json/wp/v2/tags`)
+    fetch(`https://panel.arashazimdoust.com/wp-json/wp/v2/tags`)
     .then(res=>res.json())
     .then(rs=>this.tags=rs)
   }

@@ -27,7 +27,7 @@ export default {
   },
   created() {
     fetch(
-      "http://localhost:8888/portfolio/wp-json/wp/v2/users"
+      "https://panel.arashazimdoust.com/wp-json/wp/v2/users"
     )
       .then((res) => res.json())
       .then((rs) => {

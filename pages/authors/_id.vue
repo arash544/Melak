@@ -15,7 +15,7 @@ export default {
   }, 
 
     asyncData(context) {
-   return fetch(`http://localhost:8888/portfolio/wp-json/wp/v2/posts?author=${context.route.params.id}&_embed`)
+   return fetch(`https://panel.arashazimdoust.com/wp-json/wp/v2/posts?author=${context.route.params.id}&_embed`)
       .then(res=>res.json())
       .then(rs=>{
         return{

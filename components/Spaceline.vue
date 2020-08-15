@@ -38,7 +38,7 @@ export default {
 }
 hr {
   width: 60.5%;
-  border: 1/2px solid;
+  border: 1px solid !important;
   border-color: var(--color-text);
   @media only screen and (max-width: 1650px) {
     width: 63%;

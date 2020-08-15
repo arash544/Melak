@@ -92,4 +92,9 @@ export default {
     font-weight: 300;
   }
 }
+.date{
+    @media only screen and (max-width: 768px) {
+    margin-left: 10px;
+  }
+}
 </style>

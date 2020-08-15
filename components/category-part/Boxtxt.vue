@@ -48,7 +48,7 @@ export default {
 .box {
   border: 1px solid var(--color-border);
   padding: 10px;
-  width: 80%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,8 +62,8 @@ export default {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  // -ms-flex-wrap: wrap;
+  // flex-wrap: wrap;
     @media only screen and (max-width: 768px) {
     width: 95%;
   }

@@ -35,7 +35,7 @@ export default {
   },
   created() {
     fetch(
-      "http://localhost:8888/portfolio/wp-json/wp/v2/posts?per_page=9&categories=9&_embed"
+      "https://panel.arashazimdoust.com/wp-json/wp/v2/posts?per_page=9&categories=9&_embed"
     )
       .then((res) => res.json())
       .then((rs) => {
